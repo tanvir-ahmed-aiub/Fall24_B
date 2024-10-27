@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Education";
+}
+
+<h1>@ViewBag.Name</h1>
+<h2>Id: @ViewBag.Id</h2>
+
+@if (TempData["Msg"] != null) { 
+    <span class="alert alert-info">@TempData["Msg"]</span>
+}
+
+<h2>Education</h2>
+<table class="table table-bordered" >
+    <tr>
+        <th>Degree</th>
+        <th>Institute</th>
+        <th>Result</th>
+        <th>Year</th>
+    </tr>
+    @for (int i=0; i<ViewBag.Degrees.Length;i++) { 
+        <tr>
+            <td>@ViewBag.Degrees[i].Title</td>
+            <td>@ViewBag.Degrees[i].Ins</td>
+            <td>@ViewBag.Degrees[i].Result</td>
+            <td>@ViewBag.Degrees[i].Year</td>
+        </tr>
+    }
+    @*<tr>
+        <td>@ViewBag.D1.Title</td>
+        <td>@ViewBag.D1.Ins</td>
+        <td>@ViewBag.D1.Result</td>
+        <td>@ViewBag.D1.Year</td>
+    </tr>*@
+</table>
+
