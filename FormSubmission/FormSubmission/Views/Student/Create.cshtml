@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+
+@Html.ValidationSummary()
+<h2>Create</h2>
+<form method="post">
+    <input type="text" value="@Model.Name" name="Name" placeholder="Name" class="form-control" />
+    <span class="text-danger">@Html.ValidationMessage("Name")</span><br />
+    <input type="text" value="@Model.Email" name="Email" placeholder="Email" class="form-control" />
+    <span class="text-danger">@Html.ValidationMessage("Email")</span><br />
+    <input type="text" value="@Model.Phone" name="Phone" placeholder="Phone" class="form-control" />
+    <input type="text" value="@Model.Id" name="Id" placeholder="Id" class="form-control" />
+    <input type="submit" value="Create" class="btn btn-success" />
+</form>
+
