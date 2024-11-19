@@ -1,4 +1,5 @@
-﻿using EfwithDTO.DTOs;
+﻿using EfwithDTO.Auth;
+using EfwithDTO.DTOs;
 using EfwithDTO.EF;
 using System;
 using System.Collections.Generic;
@@ -48,6 +49,7 @@ namespace EfwithDTO.Controllers
             }
             return View(d);
         }
+        [Logged]
         public ActionResult List() {
             var data = db.Departments.ToList();
             return View(Convert(data));

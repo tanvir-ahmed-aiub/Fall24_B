@@ -22,10 +22,23 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Cgpa" Type="Double" Nullable="false" />
+    <Property Name="Dob" Type="DateTime" Precision="0" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityContainer Name="StudentDB_F24_BEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Courses" EntityType="Self.Cours" />
     <EntitySet Name="Departments" EntityType="Self.Department" />
     <EntitySet Name="Students" EntityType="Self.Student" />
+    <EntitySet Name="Users" EntityType="StudentDB_F24_BModel.User" />
   </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pass" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Role" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

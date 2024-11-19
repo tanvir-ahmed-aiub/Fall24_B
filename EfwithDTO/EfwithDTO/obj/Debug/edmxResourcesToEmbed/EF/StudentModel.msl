@@ -21,9 +21,22 @@
     <EntitySetMapping Name="Students">
       <EntityTypeMapping TypeName="StudentDB_F24_BModel.Student">
         <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Dob" ColumnName="Dob" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Cgpa" ColumnName="Cgpa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="StudentDB_F24_BModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="UName" ColumnName="UName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

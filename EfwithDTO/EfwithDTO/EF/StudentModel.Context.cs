@@ -28,5 +28,6 @@ namespace EfwithDTO.EF
         public virtual DbSet<Cours> Courses { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

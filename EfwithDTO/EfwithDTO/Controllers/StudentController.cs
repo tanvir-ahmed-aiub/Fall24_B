@@ -1,4 +1,5 @@
-﻿using EfwithDTO.EF;
+﻿using EfwithDTO.Auth;
+using EfwithDTO.EF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Web.Mvc;
 
 namespace EfwithDTO.Controllers
 {
+    [Logged]
     public class StudentController : Controller
     {
         StudentDB_F24_BEntities db = new StudentDB_F24_BEntities();
@@ -28,6 +30,7 @@ namespace EfwithDTO.Controllers
             return View(s);
             
         }
+        [AllowAnonymous]
         public ActionResult List()
         {
 
