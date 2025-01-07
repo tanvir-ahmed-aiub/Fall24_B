@@ -1,4 +1,5 @@
 ﻿using DAL.EF;
+using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +8,10 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    public class StudentRepo
+    internal class StudentRepo : Repo, IStudentRepo
     {
-        UMSContext db;
-        public StudentRepo() {
-            db = new UMSContext();
-        }
-        public void Create(Student s) { 
+        
+        public void Add(Student s) { 
             db.Students.Add(s);
             db.SaveChanges();
         }

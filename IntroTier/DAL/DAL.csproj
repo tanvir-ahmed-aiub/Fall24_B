@@ -52,14 +52,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EF\Course.cs" />
     <Compile Include="EF\Student.cs" />
     <Compile Include="EF\UMSContext.cs" />
     <Compile Include="Migrations\202412290830561_initdb.cs" />
     <Compile Include="Migrations\202412290830561_initdb.designer.cs">
       <DependentUpon>202412290830561_initdb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202412310816565_CourseTableAdded.cs" />
+    <Compile Include="Migrations\202412310816565_CourseTableAdded.designer.cs">
+      <DependentUpon>202412310816565_CourseTableAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\CourseRepo.cs" />
+    <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\StudentRepo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202412290830561_initdb.resx">
       <DependentUpon>202412290830561_initdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412310816565_CourseTableAdded.resx">
+      <DependentUpon>202412310816565_CourseTableAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

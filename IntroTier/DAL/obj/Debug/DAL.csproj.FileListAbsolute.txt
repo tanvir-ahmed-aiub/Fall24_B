@@ -12,3 +12,4 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\B\IntroTier\DAL\bin\Debug\EntityFramework.Sql
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\IntroTier\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\IntroTier\DAL\obj\Debug\DAL.Migrations.initdb.resources
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\IntroTier\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\IntroTier\DAL\obj\Debug\DAL.Migrations.CourseTableAdded.resources
