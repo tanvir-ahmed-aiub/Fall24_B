@@ -23,5 +23,12 @@ namespace TierPMS.Controllers
             var data = CategoryService.Get(id);
             return Request.CreateResponse(HttpStatusCode.OK, data);
         }
+        [HttpGet]
+        [Route("api/category/{id}/products")]
+        public HttpResponseMessage GetwithProducts(int id)
+        {
+            var data = CategoryService.GetwithProducts(id);
+            return Request.CreateResponse(HttpStatusCode.OK, data);
+        }
     }
 }
